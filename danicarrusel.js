@@ -1,7 +1,7 @@
 // Cojo el contenedor externo (es un solo elemento)
-      let contenedor = document.querySelector(".jocarsacarrusel");
+      let contenedor = document.querySelector(".danicarrusel");
       // Cojo las imagenes de dentro (es un array de elementos)
-      let contenido = document.querySelectorAll(".jocarsacarrusel img")
+      let contenido = document.querySelectorAll(".danicarrusel img")
       // Para cada una de las imagenes
       contenido.forEach(function(elemento){
         // Quito la imagen del html
