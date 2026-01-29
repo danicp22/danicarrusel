@@ -1,4 +1,4 @@
-      // Cojo el contenedor externo (es un solo elemento)
+// Cojo el contenedor externo (es un solo elemento)
       let contenedor = document.querySelector(".jocarsacarrusel");
       // Cojo las imagenes de dentro (es un array de elementos)
       let contenido = document.querySelectorAll(".jocarsacarrusel img")
@@ -29,14 +29,18 @@
       // Cuando haga click en el boton delante
       botondelante.onclick = function(){
         // Le quito un elemento al contador
+        console.log(contador)
         contador--;
+        if(contador < -7){contador = 0;}
         // Actualizo la posicion del nuevo contenedor
       	nuevo_contenedor.style.left = contador*anchura+"px"
       }
       // Cuando haga click en el boton atras
       botonatras.onclick = function(){
         // Le quito un elemento al contador
+        console.log(contador)
         contador++;
+        if(contador > 0){contador = 0;}
         // Actualizo la posicion del nuevo contenedor
       	nuevo_contenedor.style.left = contador*anchura+"px"
       }
