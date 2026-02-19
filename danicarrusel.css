@@ -67,13 +67,12 @@
   position:static;
 }
 
-.back-home img{
+img{
   width:80px;
   height:80px;
   transition:0.3s;
 }
-
-.back-home img:hover{
+img:hover{
   transform:scale(1.1);
   filter:drop-shadow(0 0 10px #00e0c2);
 }
